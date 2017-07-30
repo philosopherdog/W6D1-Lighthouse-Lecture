@@ -19,6 +19,7 @@ class ViewController: UIViewController {
   }
   
   @IBAction func buttonTapped() {
+  // test for authorization. why do it here?
   
   }
 }
