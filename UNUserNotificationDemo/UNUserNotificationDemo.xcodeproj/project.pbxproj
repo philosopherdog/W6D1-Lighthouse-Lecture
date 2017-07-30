@@ -13,8 +13,8 @@
 		AA34B8861F2E675D00C9E758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA34B8851F2E675D00C9E758 /* Assets.xcassets */; };
 		AA34B8891F2E675D00C9E758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA34B8871F2E675D00C9E758 /* LaunchScreen.storyboard */; };
 		AA34B8941F2E675D00C9E758 /* UNUserNotificationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34B8931F2E675D00C9E758 /* UNUserNotificationDemoTests.swift */; };
-		AA34B8A01F2E68FE00C9E758 /* sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = AA34B89F1F2E68FE00C9E758 /* sound.wav */; };
 		AA34B8A21F2E691E00C9E758 /* montreal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA34B8A11F2E691E00C9E758 /* montreal.jpg */; };
+		AA34B8A91F2E791F00C9E758 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = AA34B8A81F2E791F00C9E758 /* sound.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,8 @@
 		AA34B88F1F2E675D00C9E758 /* UNUserNotificationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UNUserNotificationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA34B8931F2E675D00C9E758 /* UNUserNotificationDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNUserNotificationDemoTests.swift; sourceTree = "<group>"; };
 		AA34B8951F2E675D00C9E758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA34B89F1F2E68FE00C9E758 /* sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound.wav; sourceTree = "<group>"; };
 		AA34B8A11F2E691E00C9E758 /* montreal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = montreal.jpg; sourceTree = "<group>"; };
+		AA34B8A81F2E791F00C9E758 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 		AA34B89E1F2E676900C9E758 /* Supplementary Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA34B8A81F2E791F00C9E758 /* sound.caf */,
 				AA34B8A11F2E691E00C9E758 /* montreal.jpg */,
-				AA34B89F1F2E68FE00C9E758 /* sound.wav */,
 				AA34B8851F2E675D00C9E758 /* Assets.xcassets */,
 				AA34B8871F2E675D00C9E758 /* LaunchScreen.storyboard */,
 				AA34B88A1F2E675D00C9E758 /* Info.plist */,
@@ -195,9 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA34B8A01F2E68FE00C9E758 /* sound.wav in Resources */,
 				AA34B8A21F2E691E00C9E758 /* montreal.jpg in Resources */,
 				AA34B8891F2E675D00C9E758 /* LaunchScreen.storyboard in Resources */,
+				AA34B8A91F2E791F00C9E758 /* sound.caf in Resources */,
 				AA34B8861F2E675D00C9E758 /* Assets.xcassets in Resources */,
 				AA34B8841F2E675D00C9E758 /* Main.storyboard in Resources */,
 			);
@@ -430,6 +430,7 @@
 				AA34B89A1F2E675D00C9E758 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA34B89B1F2E675D00C9E758 /* Build configuration list for PBXNativeTarget "UNUserNotificationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +439,7 @@
 				AA34B89D1F2E675D00C9E758 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
