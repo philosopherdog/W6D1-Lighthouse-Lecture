@@ -144,7 +144,7 @@ DELETE => Deleting**
 
 * Setting up remote notifications is very involved. So, I won’t be demoing that today. But we can learn the basics by looking at an example of a local notification.
 
-# ~~Demo LocalNotification~~
+# =>Demo LocalNotification<=
 
 *  [Documentation Link](https://developer.apple.com/library/prerelease/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/Introduction.html#//apple_ref/doc/uid/TP40008194)
 
@@ -156,5 +156,5 @@ DELETE => Deleting**
 * The client I’m using in the demo today is Paw (Highly recommended). You can download a 30 day trial here if you want to follow along: [Paw](https://paw.cloud)
 * There are many other clients. Here’s are 2 free ones: 1. [Rested](https://itunes.apple.com/ca/app/rested-simple-http-requests/id421879749?mt=12), 2. [PostMan Chrome Plugin](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
 
-# ~~Demo REST~~
+# =>Demo REST<=
 
