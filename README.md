@@ -30,11 +30,16 @@
 
 * Servers send a response back to the client with the resource if it could fulfill the request, otherwise it will give some information about what went wrong with processing the request.
 
-####Basic HTTP Status Codes: 
+#### Basic HTTP Status Codes: 
+
 2XX => Successful
+
 3XX => Redirection
+
 4XX => Bad Request (Syntax error)
+
 5XX => Server Error
+
 
 
 * [Status Code Definitions](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
@@ -94,17 +99,19 @@ components?.url // http://mycoolsite.com/path%20with%20space?name=Fred&password=
 * The most common are GET and POST, but there are others.
 * Here are the most important ones:
 
-**GET => Retrieves data
-POST => Mostly used for submitting web forms
-HEAD => Same as GET except you don’t get the response body
-PUT => Modifying an existing resource (update)
-DELETE => Deleting**
+**GET => Retrieves data<br>
+POST => Sends data (e.g. sending web forms)<br>
+HEAD => Same as GET but no response body<br>
+PUT => Modifies existing resource (update)<br>
+DELETE => Deletes!**<br>
 
-* REST is a very common architecture/style of exposing an application sitting on a server. It’s currently the dominant style of exposing a web backend.
+* REST is a very common architecture/style of exposing an application sitting on a server. 
+
+* It’s currently the dominant style of exposing a web backend.
 
 * REST mimics the HTTP protocol and uses the same request methods, but don’t confuse the 2.
 
-* You could, for instance, use a REST architecture on a data manager object to handle core data if you wanted. This would involve sending an NSURL that the manager would parse to determine how to do the data call. eg. “myapp://steve.com/users” could be parsed so that it returns all of the users if it’s a GET request. REST is just a style/convention for exposing an API for request/response interactions.
+* You could, as an experiment, use a REST architecture on a data manager object to handle core data. This would involve sending an NSURL that the manager would parse to determine how to do the data call. eg. “myapp://steve.com/users” could be parsed so that it returns all users if it’s a GET request. eg. “myapp://steve.com/users/:id” would get a specific user. REST is just a style/convention for exposing an API for request/response interactions.
 
 ## iOS Push Notifications
 
@@ -134,19 +141,30 @@ DELETE => Deleting**
 
 * Your server calls APNs and their service calls the associated device and passes the data securely.
 
+* For remote notifications, your server environment must be capable of receiving data from user devices and sending notification-related data to APNs.
+
+* Most BAAS systems also include push notification support.
+
 ![](Images/diagram4.jpg)
 
 * There are 2 Notification API's. `UILocalNotifictions`, and the new system called `UNUserNotifications`. 
 
-* `UNUserNotifications` was introduced in iOS 10. So, you might need to use both API in an app that is backward compatible. :(
+* `UNUserNotifications` was introduced in iOS 10. So, you might need to use both API's in an app that is backward compatible. :(
 
-* `UNUserNotifications` is way more powerful. 
+* `UNUserNotifications` is way more powerful. (It goes without saying, prefer current API's over legacy ones). 
 
 * Setting up remote notifications is very involved. So, I won’t be demoing that today. But we can learn the basics by looking at an example of a local notification.
 
 # =>Demo LocalNotification<=
 
 *  [Documentation Link](https://developer.apple.com/library/prerelease/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/Introduction.html#//apple_ref/doc/uid/TP40008194)
+
+#### The steps for configuring a local notification are as follows:
+
+1. Create and configure a `UNMutableNotificationContent` object with the notification details.
+2. Create a `UNCalendarNotificationTrigger`, `UNTimeIntervalNotificationTrigger`, or `UNLocationNotificationTrigger` object to describe the conditions under which the notification is delivered.
+3. Create a `UNNotificationRequest` object with the content and trigger information.
+4. Call the `addNotificationRequest:withCompletionHandler:` method to schedule the notification.
 
 ## Rest Requests & Today’s Assignment
 
